@@ -52,6 +52,7 @@
 #define LCD_PINS_RS        28   // ST9720 CS
 #define LCD_PINS_ENABLE    17   // ST9720 DAT
 #define LCD_PINS_D4        30   // ST9720 CLK
+#define FIL_RUNOUT_PIN     29
 
 #if ENABLED(BLTOUCH)
   #define SERVO0_PIN 27
@@ -116,7 +117,7 @@
   PIN:  26   Port: A5        Z_ENABLE_PIN                protected
   PIN:  27   Port: A4        BEEPER_PIN                  Output = 0
   PIN:  28   Port: A3        LCD_PINS_RS                 Output = 0
-  PIN:  29   Port: A2        <unused/unknown>            Input  = 0
+  PIN:  29   Port: A2        RUNOUT                      Input  = 0
   PIN:  30   Port: A1        LCD_PINS_D4                 Output = 1
   PIN:  31   Port: A0        SDSS                        Output = 1
 */
