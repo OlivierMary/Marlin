@@ -1,0 +1,4 @@
+Select ATmega1284p
+Click `...` Low =DC, High=D6, ExtVal=FD -> Write
+Load Flash, select .hex
+Autoupdate
