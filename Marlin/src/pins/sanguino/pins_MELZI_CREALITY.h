@@ -68,9 +68,11 @@
   #if SERVO0_PIN == BEEPER_PIN
     #undef BEEPER_PIN
   #endif
-#elif HAS_FILAMENT_SENSOR
+#endif
+
+#if HAS_FILAMENT_SENSOR
   #ifndef FIL_RUNOUT_PIN
-    #define FIL_RUNOUT_PIN                    27
+    #define FIL_RUNOUT_PIN                    29
   #endif
   #if FIL_RUNOUT_PIN == BEEPER_PIN
     #undef BEEPER_PIN
@@ -124,7 +126,7 @@
   PIN:  26   Port: A5        Z_ENABLE_PIN                protected
   PIN:  27   Port: A4        BEEPER_PIN                  Output = 0
   PIN:  28   Port: A3        LCD_PINS_RS                 Output = 0
-  PIN:  29   Port: A2        <unused/unknown>            Input  = 0
+  PIN:  29   Port: A2        RUNOUT                      Input  = 0
   PIN:  30   Port: A1        LCD_PINS_D4                 Output = 1
   PIN:  31   Port: A0        SDSS                        Output = 1
 */
